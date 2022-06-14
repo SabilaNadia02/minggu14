@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hapus Elemen HTML</title>
+    </head>
+    <body>
+        <div id="mydiv">
+            <p id="p1">Paragraf pertamaku</p>
+            <p id="p2">Paragraf keduaku</p>
+        </div>
+        <script>
+            var parent = document.getElementById("mydiv");
+            var child = document.getElementById("p2");
+            parent.removeChild(child);
+        </script>
+    </body>
+</html>

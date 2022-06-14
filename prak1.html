@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Mengakses HTML DOM</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById("demo").innerHTML = "Hello world!";
+        </script>
+        <h1> Jago Javascript </h1>
+        <h1> Javascript sangat menyenangkan </h1>
+        <script>
+            const element = document.getElementsByTagName("h1");
+            document.getElementById("demo").innerHTML = "Isi h1 pertama adalah: " + element[0].innerHTML;
+        </script>
+        <p class="nama">Sabila Nadia Islamia</p>
+        <script>
+            const x = document.getElementsByClassName("nama");
+            document.getElementById("demo").innerHTML = "Nama saya adalah " + x[0].innerHTML;
+        </script>
+    </body>
+</html>
